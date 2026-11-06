@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="28dp"
+        android:paddingTop="56dp"
+        android:paddingBottom="28dp">
+
+        <!-- Logo superior estilo Miro -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VALLEJO+"
+            android:textColor="@color/brand_magenta"
+            android:textSize="36sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restaurante Rincón de Vallejo"
+            android:textColor="@color/brand_magenta"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Sistema de control de sedes a nivel nacional."
+            android:textColor="@color/text_primary"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <!-- Campo Correo -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Correo"
+            android:textColor="@color/text_primary"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/bg_input_login"
+            android:hint="name@example.com"
+            android:inputType="textEmailAddress"
+            android:paddingHorizontal="12dp"
+            android:textColor="@color/text_primary"
+            android:textColorHint="#757575"
+            android:textSize="14sp" />
+
+        <!-- Campo Clave -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Clave"
+            android:textColor="@color/text_primary"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etClave"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/bg_input_login"
+            android:hint="••••••••••••"
+            android:inputType="textPassword"
+            android:paddingHorizontal="12dp"
+            android:textColor="@color/text_primary"
+            android:textColorHint="#757575"
+            android:textSize="14sp" />
+
+        <!-- Botón Ingresar -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnIngresar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="24dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="INGRESAR"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/brand_yellow"
+            app:cornerRadius="3dp" />
+
+        <!-- Botón Recuperar Contraseña -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRecuperarClave"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="RECUPERAR CONTRASEÑA"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/brand_magenta"
+            app:cornerRadius="3dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <!-- Sello inferior estilo Miro -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/bg_bottom_pill"
+            android:gravity="center"
+            android:paddingHorizontal="22dp"
+            android:paddingVertical="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VALLEJO+"
+                android:textColor="@color/brand_yellow"
+                android:textSize="16sp"
+                android:textStyle="bold|italic" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

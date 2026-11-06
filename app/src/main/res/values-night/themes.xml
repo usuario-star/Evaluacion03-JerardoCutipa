@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Mantiene el tema claro fiel al diseño del examen incluso en modo oscuro -->
+    <style name="Base.Theme.RinconDeVallejo" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/brand_magenta</item>
+        <item name="colorSecondary">@color/brand_yellow</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowBackground">@color/bg_screen</item>
+    </style>
+</resources>
